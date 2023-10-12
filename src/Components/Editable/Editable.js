@@ -3,7 +3,7 @@ import { X } from "react-feather";
 import './Editable.css'
 
 const Editable = (props) => {
-  const [inputValue, setinputValue] = useState("");
+  const [inputValue, setinputValue] = useState(props.default || "");
   const [showEdit, setShowEdit] = useState(false);
   return (
     <div className='editable'>

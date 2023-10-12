@@ -1,0 +1,62 @@
+.cardinfo{
+    width: 50vw;
+    padding: 30px;
+    background-color: #ecebeb;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardinfo_box{
+    display: flex;
+    flex-direction: column;
+}
+.cardinfo_box_title{
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 10px;
+}
+.cardinfo_box_body{
+    width: fit-content;
+}
+.cardinfo_box_body input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.cardinfo_box_colors{
+    display: flex;
+    gap: 15px;
+    align-items:  center;
+    cursor:pointer;
+}
+.cardinfo_box_colors li{
+    list-style: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border:3px solid transparent;
+    transition: 200ms;
+}
+/* .cardinfo_box_colors li:hover{
+    border: 2px solid rgb(249, 244, 244);
+} */
+.cardinfo_box_colors .active{
+    border: 3px solid white;
+}
+.cardinfo_box_progress_bar{
+    height: 10px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.cardinfo_box_progress{
+    height: 10px;
+    border-radius: 20px;
+    background-color: #1379ec;
+}
+.cardinfo_box_progress-active{
+    background-color: limegreen;
+}
