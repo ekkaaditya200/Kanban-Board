@@ -3,15 +3,18 @@ import './Card.css'
 import Chip from '../Chip/Chip';
 import { Clock, CheckSquare, MoreHorizontal } from 'react-feather'
 import Dropdown from '../Dropdown/Dropdown';
+import CardInfo from './CardInfo/CardInfo';
 
 const Card = (props) => {
     const [show, setShow] = useState(false);
-
+    const [showModal, setShowModal] = useState(false);
     return (
         <div className='card'
+            draggable
             onDragEnd={() => props.handleDragEnd(props.card?.id, props.boardId)}
             onDragEnter={() => props.handleDragEnter(props.card?.id, props.boardId)}
         >
+            {showModal && <CardInfo onClose={() => setShowModal} />}
             <div className='card_top'>
                 <div className='card_top_labels'>
                     {
